@@ -9,11 +9,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import dev.mookies.movies.domain.Reviews;
 import dev.mookies.movies.services.ReviewService;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 
 @Controller
+@CrossOrigin(origins ="*")
 @RequestMapping("/api/v1/reviews")
 public class ReviewController {
     
